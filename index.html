@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FPL Bargains</title>
+        <script src="/display.js"></script>
+        <link rel="stylesheet" type="text/css" href="/styles.css"/>
+    </head>
+    <body>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tables">Data</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="user-selection">
+                <div id="select-playerType">
+                    <form>
+                        <h4>Select Player Type</h4>
+                        <input type="radio" name="playerType" value="keepers" class="select-player-buttons" id="keepers-button">
+                        <label>Keepers</label>
+                        <br/>
+                        <input type="radio" name="playerType" value="defenders" class="select-player-buttons" id="defenders-button">
+                        <label>Defenders</label>
+                        <br/>
+                        <input type="radio" name="playerType" value="midfielders" class="select-player-buttons" id="midfielders-button">
+                        <label>Midfielders</label>
+                        <br/>
+                        <input type="radio" name="playerType" value="strikers" class="select-player-buttons" id="strikers-button">
+                        <label>Strikers</label>
+                        <br/>
+                        <input type="radio" name="playerType" value="allPlayers" class="select-player-buttons" id="allPlayers-button">
+                        <label>All Players</label>
+                    </form>
+                </div>
+                <div id="select-sortBy">
+                    <form>
+                        <h4>Sort By:</h4>
+                        
+                        <input type="radio" name="sortBy" value="total-points" class="sort-by-buttons" checked>
+                        <label>Total Points</label>
+                        <br/>
+                        <input type="radio" name="sortBy" value="ppg" class="sort-by-buttons">
+                        <label>Points Per Game</label>
+                        <br/>
+                        <input type="radio" name="sortBy" value="price" class="sort-by-buttons">
+                        <label>Price</label>
+                        <br/>
+                        <input type="radio" name="sortBy" value="ppm" class="sort-by-buttons">
+                        <label>Total Points/Million</label>
+                        <br/>
+                        <input type="radio" name="sortBy" value="ppgpm" class="sort-by-buttons">
+                        <label>Points Per Game/Million</label>
+                        <br/>
+                        <input type="radio" name="sortBy" value="selected_by_percent" class="sort-by-buttons">
+                        <label>% Owned</label>
+                        <br/>
+                        <input type="radio" name="sortBy" value="market_cap" class="sort-by-buttons">
+                        <label>Market Cap</label>
+                    </form>
+                </div>
+            </div>
+            <div id="tables"></div>
+    </main>
+    </body>
+</html>
