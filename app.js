@@ -14,7 +14,7 @@ function createData (jsonData) {
     /* for (let i = 40; i < 50; i++) {
         console.log(jsonData.elements[i]);
     } */
-	console.log("jsonData: " + jsonData);
+	console.log("jsonData: ", jsonData);
 	if (jsonData) {
 		for (let i = 0; i < jsonData.elements.length; i++) { //jsonData.elements.length; i++) {
 			const price = parseFloat(jsonData.elements[i].now_cost);
