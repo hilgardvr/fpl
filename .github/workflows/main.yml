@@ -30,9 +30,7 @@ jobs:
     - name: Push to Heroku
       uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:
-        push: true
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "fpl-bargains" #Must be unique in Heroku
-          heroku_email: "hilgardvr@gmail.com"
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "fpl-bargains" #Must be unique in Heroku
+        heroku_email: "hilgardvr@gmail.com"
     
